@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phương Anh | Marketing Intern</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --pink:#ff4d8d;
+    --purple:#7b61ff;
+    --blue:#4da6ff;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#fceaff,#e6f0ff,#fff5f8);
+    overflow-x:hidden;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:30px;
+}
+
+/* HERO */
+.hero{
+    display:flex;
+    flex-wrap:wrap;
+    gap:40px;
+    align-items:center;
+}
+
+.avatar{
+    width:260px;
+    height:330px;
+    border-radius:20px;
+    overflow:hidden;
+    border:3px solid transparent;
+    background:linear-gradient(white,white) padding-box,
+               linear-gradient(135deg,var(--pink),var(--blue)) border-box;
+}
+
+.avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+h1{
+    font-size:3rem;
+    background:linear-gradient(90deg,var(--pink),var(--purple));
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.tag{
+    background:linear-gradient(90deg,var(--pink),var(--purple));
+    color:white;
+    padding:5px 12px;
+    border-radius:20px;
+    margin-right:5px;
+    font-size:0.8rem;
+}
+
+.section{
+    margin-top:60px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    margin-top:20px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    background:linear-gradient(90deg,var(--pink),var(--purple));
+    color:white;
+    border-radius:30px;
+    text-decoration:none;
+}
+
+.skill{margin-top:10px}
+
+.bar{
+    height:8px;
+    background:#eee;
+    border-radius:10px;
+}
+
+.fill{
+    height:100%;
+    background:linear-gradient(90deg,var(--pink),var(--blue));
+}
+
+/* 🌸 SAKURA ANIME BACKGROUND */
+.sakura-container{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    z-index:-1;
+}
+
+.sakura{
+    position:absolute;
+    background:url("https://pngimg.com/uploads/cherry_blossom/cherry_blossom_PNG25.png") no-repeat;
+    background-size:cover;
+    opacity:0.8;
+    filter:drop-shadow(0 0 6px rgba(255,150,200,0.5));
+    animation:fall linear infinite;
+}
+
+@keyframes fall{
+    0%{
+        transform:translateY(-10vh) translateX(0) rotate(0deg);
+        opacity:0;
+    }
+    10%{opacity:1;}
+    100%{
+        transform:translateY(110vh) translateX(80px) rotate(360deg);
+        opacity:0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- 🌸 Background -->
+<div class="sakura-container"></div>
+
+<div class="container">
+
+<!-- HERO -->
+<section class="hero">
+<div class="avatar">
+<img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1">
+</div>
+
+<div>
+<h1>Phương Anh</h1>
+<span class="tag">Marketing Intern</span>
+<span class="tag">KOC</span>
+<span class="tag">Edura Teacher</span>
+
+<p>
+Sinh viên K61 – Tiếng Nhật Thương mại FTU.  
+Định hướng phát triển trong lĩnh vực marketing số, kết hợp ngôn ngữ và công nghệ.
+</p>
+</div>
+</section>
+
+<!-- ABOUT -->
+<div class="section">
+<h2>🧭 Giới thiệu</h2>
+<div class="card">
+<p>
+Mình là sinh viên năm 3 chuyên ngành Tiếng Nhật Thương mại tại FTU.  
+Hiện là KOC và giáo viên livestream tại Edura.  
+
+Quan tâm đến <b>ngôn ngữ – marketing – công nghệ</b> 
+và ứng dụng vào giáo dục & kinh doanh.
+</p>
+</div>
+</div>
+
+<!-- SKILLS -->
+<div class="section">
+<h2>🔧 Kỹ năng</h2>
+
+<div class="card">
+<p><b>Marketing</b></p>
+
+<div class="skill">
+<p>Content Strategy</p>
+<div class="bar"><div class="fill" style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+<p>Digital Ads</p>
+<div class="bar"><div class="fill" style="width:80%"></div></div>
+</div>
+
+<div class="skill">
+<p>Livestream Engagement</p>
+<div class="bar"><div class="fill" style="width:85%"></div></div>
+</div>
+</div>
+
+<div class="card">
+<p><b>Ngoại ngữ</b></p>
+<ul>
+<li>🇯🇵 JLPT N2</li>
+<li>🇨🇳 HSK3</li>
+<li>🇬🇧 English (basic)</li>
+</ul>
+</div>
+
+</div>
+
+<!-- EXPERIENCE -->
+<div class="section">
+<h2>💼 Kinh nghiệm</h2>
+
+<div class="grid">
+<div class="card">
+<h3>📱 KOC TikTok</h3>
+<p>Sáng tạo nội dung, bắt trend, xây dựng thương hiệu cá nhân.</p>
+</div>
+
+<div class="card">
+<h3>🎤 Livestream Edura</h3>
+<p>Giảng dạy tiếng Nhật online, tối ưu tương tác và trải nghiệm.</p>
+</div>
+</div>
+</div>
+
+<!-- PROJECT -->
+<div class="section">
+<h2>📊 Dự án Marketing</h2>
+
+<div class="card">
+<h3>Digital Content & Ads Campaign</h3>
+
+<p>
+Xây dựng chiến lược nội dung và triển khai quảng cáo trên nền tảng số 
+(TikTok, Facebook).
+</p>
+
+<ul>
+<li>Lập kế hoạch nội dung</li>
+<li>Phân tích insight khách hàng</li>
+<li>Tối ưu hiệu quả quảng cáo</li>
+</ul>
+
+<a href="#" class="btn">Xem case study</a>
+</div>
+</div>
+
+<!-- CONTACT -->
+<div class="section">
+<h2>📫 Liên hệ</h2>
+<div class="card">
+<p>Email: k61.2211740014@ftu.edu.vn</p>
+<p>Phone: 0917363192</p>
+</div>
+</div>
+
+</div>
+
+<script>
+function createSakura(){
+    const container = document.querySelector('.sakura-container');
+
+    for(let i=0;i<30;i++){
+        let petal = document.createElement('div');
+        petal.classList.add('sakura');
+
+        let size = Math.random()*10 + 10;
+        petal.style.width = size + "px";
+        petal.style.height = size + "px";
+
+        petal.style.left = Math.random()*100 + "vw";
+        petal.style.animationDuration = (6 + Math.random()*6) + "s";
+        petal.style.animationDelay = Math.random()*5 + "s";
+
+        container.appendChild(petal);
+    }
+}
+createSakura();
+</script>
+
+</body>
+</html>
